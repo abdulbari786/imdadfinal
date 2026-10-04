@@ -19,9 +19,17 @@ function Home(){
   <nav className={menu?'open':''} onClick={()=>setMenu(false)}>{[['causes','Our Causes'],['story','Our Story'],['impact','Impact'],['gallery','Gallery'],['proof','Transparency'],['contact','Contact']].map(([h,t])=><a key={h} href={'#'+h}>{t}</a>)}<Donor/></nav></div></header>
  <main id="top">
  <section className="hero"><div className="wrap hg"><div>
-  <h1 className="rise">Genuine service for mankind.</h1>
-  <p className="lead rise" style={{'--d':'140ms'}}>Homes, classrooms, kitchens and skills for those in deep need in Hyderabad. All of it runs on your donations.</p>
-  <div className="cta rise" style={{'--d':'280ms'}}><Donor/><a className="btn o" href="#story">Our story</a></div></div>
+  <div>
+  <p className="eyebrow rise">Helping families since 2019</p>
+  <h1 className="rise" style={{'--d':'120ms'}}>Your small help can change a whole life.</h1>
+  <p className="lead rise" style={{'--d':'240ms'}}>
+    We give children and women food, education and a safe place to grow. Join us today.
+  </p>
+  <div className="cta rise" style={{'--d':'360ms'}}>
+    <Donor/>
+    <a className="btn o" href="#causes">See Our Work</a>
+  </div>
+</div></div>
   <div className="collage"><figure className="p1 pop" style={{'--d':'150ms'}}><img src={IMG.school} alt="Students in school uniform lined up in rows"/><figcaption>IFT Mission High School</figcaption></figure>
    <figure className="p2 pop" style={{'--d':'300ms'}}><img src={IMG.top30} alt="Femhonour Top 30 Visionary Women award poster for founder Azmath Unnisa"/><figcaption>Top 30 Visionary Women, 2026</figcaption></figure>
    <figure className="p3 pop" style={{'--d':'450ms'}}><img src={IMG.women} alt="Women holding tailoring certificates"/><figcaption>Women Skills Hub</figcaption></figure></div></div>

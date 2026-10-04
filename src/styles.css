@@ -61,3 +61,5 @@ footer{background:var(--navy);color:#d6e4fb;padding:70px 0 100px;border-top:4px 
 .p2 img{object-position:35% 30%}
 @media(max-width:860px){.collage{grid-template-columns:1fr 1.2fr}.p2{background:#102E50}.p2 img{object-fit:contain;object-position:center}.cta{padding-right:68px}}
 .btn{white-space:nowrap}@media(max-width:860px){.collage .p2{background:#102E50}.brand{font-size:.95rem}.mini{padding:0 14px}}
+
+.eyebrow{display:inline-block;font:600 .8rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--blue);background:var(--lb);padding:7px 14px;border-radius:999px;margin-bottom:18px}
