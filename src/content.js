@@ -9,6 +9,7 @@ import qrWa from './assets/qr_whatsapp.svg'; import qrIg from './assets/qr_insta
 export const IMG={school,women,top30,girls,founder,karate,karate2,press1,press2,trophy1,trophy2,plaque,logo,poster,qrWa,qrIg}
 export const TRUST={name:'Imdad-ul-Fuqaraa Trust',phone:'+91 74160 02818',tel:'+917416002818',wa:'917416002818',email:'imdadulfuqaraatrust@gmail.com',ceo:'ceo@imdadulfuqaraatrust.com',
  address:'10-94, Bismillah Colony, Shaheen Nagar, Balapur, Jalpally Municipality, Hyderabad, Telangana – 500005',ig:'https://www.instagram.com/imdadulfuqaraatrust/',reg:'Regd. No. 48 | IV | 2021'}
+export const waLink=(text='')=>{const url=new URL('https://api.whatsapp.com/send');url.searchParams.set('phone',TRUST.wa.replace(/\D/g,''));if(text)url.searchParams.set('text',text);return url.href}
 export const BANK=[['Account name','IMDAD-UL-FUQARAA TRUST'],['Account number','50200059196653'],['Account type','Current Account'],['IFSC code','HDFC0001629'],['Branch','Shaikpet'],['Bank','HDFC Bank']]
 // Reported in the trust's 2026 report. Not live totals.
 export const STATS=[{n:335,s:'',l:'students at IFT Mission High School'},{n:70,s:'+',l:'children learning free'},{n:20,s:'',l:'students, a past TOSS exam batch'},{n:600,s:'+',l:'meals on the final Taraweeh night'}]
